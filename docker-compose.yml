@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  speech_analysis:
+    build: .
+    container_name: speech_processing
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
